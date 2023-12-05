@@ -4,7 +4,6 @@
 
 html {
     box-sizing:border-box; /* hack para Box Model */
-    font-size: 62.5%;
 }
 
 *, *:before, *:after {
