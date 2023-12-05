@@ -1,0 +1,37 @@
+:root{
+	--fuenteHeading: 'PT', sans-serif;
+}
+
+html {
+    box-sizing:border-box; /* hack para Box Model */
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
