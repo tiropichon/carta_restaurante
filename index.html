@@ -9,12 +9,23 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <header>
-            
+    	<!-- header -->
+        <header class="header">
+            <img class="header__logo" src="./img/logo.svg">
+            <p class="header__nombre"><a href="./index.html">Burger Amanda</a></p>
+
+            <!-- Barra de navegación-->                      
+            <nav class="header__nav">
+                <a href="#">Nuestra carta</a>
+                <a href="#">Contacto</a>
+            </nav>
         </header>
-        <main>
-            <div class="contenedor">
-                <div class="container">
+
+        <!-- Contenido principal-->
+        <main class="contenedor">
+
+        	<!-- Contenido de slides -->
+            <div class="container">
                 <ul class="slider">
                     <li id="slide1">
                         <img src="./img/Entrantes2.jpg" alt="slide">
@@ -26,68 +37,103 @@
                         <img src="./img/postre01.jpg" alt="slide">
                     </li>
                 </ul>
-                <ul class="menu">
-                    <li>
-                        <a href="#slide1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3">3</a>
-                    </li>
-                </ul>
-                </div>
+
+                <!-- Navegación slides -->
+				<nav class="nav-menu">
+					<ul class="menu">
+						<li>
+							<a href="#slide1">1</a>
+						</li>
+						<li>
+							<a href="#slide2">2</a>
+						</li>
+						<li>
+							<a href="#slide3">3</a>
+						</li>
+					</ul>
+				</nav>
             </div>
 
+            <!-- Entrantes -->
             <div class="contenedor">
                 <h2>Entrantes</h2>
-                <div id="Elemento">
-                    <img src="./img/Entrantes1.jpg" alt="Entrantes de pollo">
-                    <p>Entrantes de pollo</p>
-                    <p>Carne de pollo rebozado con limón y cebolla</p>
-                    <p>5€</p>
-                </div>
-                <div id="Elemento">
-                    <img src="./img/Entrantes2.jpg" alt="Titanas">
-                    <p>Titanas</p>
-                    <p>Patatas cortadas al estilo Titanas</p>
-                    <p>5€</p>
-                </div>
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/Entrantes1.jpg" alt="Entrantes de pollo" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Entrantes de pollo</h2>
+                        </div>
+                    </div>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/Entrantes2.jpg" alt="Titanas" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Titanas</h2>
+                        </div>
+                    </div>
+                </section>
             </div>
-                 <div class="contenedor">
-                    <h2>Hamburguesas</h2>
-                    <div id="Elemento">
-                        <p>Hamburguesa Black Angus</p>
-                        <img src="./img/01.jpg" alt="Hamburguesa">
-                        <p>Hamburguesa de carne Black Angus, con huevo, tomate, jamon york, lechuga batavia</p>
-                        <p>12,50€</p>
+
+            <!-- Hamburguesas -->
+            <div class="contenedor">
+                <h2>Hamburguesas</h2>
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/01.jpg" alt="Hamburguesa de cerdo" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Hamburguesa Black Angus</h2>
+                        </div>
                     </div>
-                    <div id="Elemento">
-                        <p>Hamburguesa de pollo rebozado</p>
-                        <img src="./img/03.jpg" alt="Hamburguesa de pollo rebozado">
-                        <p>Hamburguesa al estilo kentucky con lechuga, tomate, bacon y salsa yogurt</p>
-                        <p>10,95€</p>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/02.jpg" alt="Hamburguesa de pollo" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Hamburguesa estilo Kentucky</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="contenedor">
-                    <h2>Postres</h2>
-                    <div id="Elemento">
-                        <p>Tarta red velvet</p>
-                        <img src="./img/postre01.jpg" alt="Tarta red velvet">
-                        <p>Tarta red velvet con chocolate blanco y sirope de chocolate</p>
-                        <p>7€</p>
+                </section>
+            </div>
+
+            <!-- Postres -->
+            <div class="contenedor">
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/postre01.jpg" alt="Tarta Red Velvet" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Tarta Red Velvet</h2>
+                        </div>
                     </div>
-                    <div id="Elemento">
-                        <p>Shake milk</p>
-                        <img src="./img/postre02.jpg" alt="Shake milk">
-                        <p>Shake milk con galleta lotus, nata y sirope de caramelo</p>
-                        <p>8,50€</p>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/postre02.jpg" alt="Shake Milk" loading="lazy">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Shake Milk</h2>
+                        </div>
                     </div>
-                </div>
+                </section>
+            </div>
         </main>
-        <footer>
-            
+
+        <!-- footer -->
+        <footer class="footer">
+            <p class="footer__nombre">Burger Amanda</p>            
+            <nav class="footer__nav">
+                <a href="#">Nuestra carta</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <nav class="footer__nav__iconos">
+                <a href="#"><img src="./img/facebook.svg" alt="facebook"  loading="lazy"></a>
+                <a href="#"><img src="./img/instagram.svg" alt="instagram"  loading="lazy"></a>
+            </nav>
         </footer>
     </body>
 </html>
