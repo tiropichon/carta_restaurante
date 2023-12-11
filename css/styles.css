@@ -18,6 +18,7 @@ html {
   margin: auto ;
 }
 
+/* Estilos generales */
 body {
     font-family: var(--fuenteParrafos); /* Variable para definir la fuente */
     font-size: 1.6rem; /* Tamaño de la fuente */
